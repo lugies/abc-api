@@ -1,8 +1,12 @@
-api_show:
+api_get:
     path:       /customers/
     controller: App\Controller\CustomersController::login_get
     methods:    GET|HEAD
-api_login:
+api_post:
     path:       /customers/
     controller: App\Controller\CustomersController::login_post
+    methods:    POST
+orders_post:
+    path:       /orders/
+    controller: App\Controller\OrdersController::insert
     methods:    POST
