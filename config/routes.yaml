@@ -1,3 +1,8 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+api_show:
+    path:       /customers/
+    controller: App\Controller\CustomersController::login_get
+    methods:    GET|HEAD
+api_login:
+    path:       /customers/
+    controller: App\Controller\CustomersController::login_post
+    methods:    POST
