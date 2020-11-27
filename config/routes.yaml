@@ -6,7 +6,19 @@ api_post:
     path:       /customers/
     controller: App\Controller\CustomersController::login_post
     methods:    POST
+order_list:
+    path:       /orders-list
+    controller: App\Controller\OrdersController::order_list
+    methods:    POST
 orders_post:
-    path:       /orders/
+    path:       /orders-new
     controller: App\Controller\OrdersController::insert
+    methods:    POST
+order_detail_show:
+    path:       /orders/{order_code}
+    controller: App\Controller\OrdersController::show
+    methods:    GET
+order_detail_edit:
+    path:       /orders/{order_code}
+    controller: App\Controller\OrdersController::edit
     methods:    POST
